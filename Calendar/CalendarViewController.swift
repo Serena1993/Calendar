@@ -84,8 +84,20 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let back = UIButton(type: .custom)
+        back.setTitle("Back", for: .normal)
+        back.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        back.setTitleColor(ColorConst.a1_gray, for: .normal)
+        back.sizeToFit()
+        back.frame = CGRect(x: 0, y: 0, width: 50, height: 40)
+        back.addTarget(self, action: #selector(pop), for: .touchUpInside)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: back)
+
     }
 
+    func pop(){
+        let _ = self.navigationController?.popViewController(animated: true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
