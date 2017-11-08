@@ -1,0 +1,16 @@
+PODS:
+  - SRCalendar (0.1.0)
+
+DEPENDENCIES:
+  - SRCalendar (from `../`)
+
+EXTERNAL SOURCES:
+  SRCalendar:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SRCalendar: cccc06ede13a14093270ce5f82fd305a1acb548c
+
+PODFILE CHECKSUM: f3198907e37d7e2d2cf0c0faff4bb265ca47ebb1
+
+COCOAPODS: 1.2.1
