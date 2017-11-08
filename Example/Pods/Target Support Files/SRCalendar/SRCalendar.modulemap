@@ -1,0 +1,6 @@
+framework module SRCalendar {
+  umbrella header "SRCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}
