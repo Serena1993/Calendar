@@ -120,7 +120,7 @@ class CalendarLogic: NSObject {
                 calendarValid.month! >= calendarDay.month &&
                 calendarValid.day! > calendarDay.day{
                 
-                calendarDay.style = .Invalid
+                calendarDay.style = .CellDayTypeInvalid
                 //昨天乃至过去的时间设置一个灰度
             }else if (calendarToDay.year! >= calendarDay.year &&
                 calendarToDay.month! >= calendarDay.month &&
@@ -405,7 +405,7 @@ class CalendarLogic: NSObject {
                     }
                 }
             }
-            calendarDay.style = .Invalid
+            calendarDay.style = .CellDayTypeInvalid
         }
     }
 }

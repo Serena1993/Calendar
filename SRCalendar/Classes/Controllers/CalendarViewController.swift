@@ -40,14 +40,15 @@ public class CalendarViewController: UIViewController, UICollectionViewDataSourc
     }
     
     func initView(){
-        collectionView.register(CalendarDayCell.self, forCellWithReuseIdentifier: DayCell)
+        collectionView.register(CalendarDayDefualtCell.self, forCellWithReuseIdentifier: DayCell)
         collectionView.register(CalendarMonthHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: MonthHeader)
         collectionView.register(CalendarMonthFooterView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter , withReuseIdentifier: MonthFooter)
         collectionView.backgroundColor = UIColor.white
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
-        view.addSubview(CalendarHeaderView(frame: CGRect(x: 0, y: 0 , width: CalendarConst.ScreenW, height: 40)))
+        view.addSubview(CalendarHeaderView(headerType: .SRCalendarHeaderViewTypeEn))
+        
         
         indicator.frame.size = CGSize(width: 50, height: 50)
         indicator.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2)
@@ -114,7 +115,7 @@ public class CalendarViewController: UIViewController, UICollectionViewDataSourc
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DayCell, for: indexPath as IndexPath)
-        if let cacell = cell as?CalendarDayCell{
+        if let cacell = cell as? CalendarDayDefualtCell {
             let monthArray = calendarMonth[indexPath.section]as![NSObject]
             let model  = monthArray[indexPath.row] as? CalendarDayModel
             cacell.model = model!
