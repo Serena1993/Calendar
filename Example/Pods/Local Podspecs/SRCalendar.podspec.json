@@ -1,0 +1,23 @@
+{
+  "name": "SRCalendar",
+  "version": "0.1.0",
+  "summary": "A short description of SRCalendar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/305369570@qq.com/SRCalendar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "305369570@qq.com": "rui.li07@ele.me"
+  },
+  "source": {
+    "git": "https://github.com/305369570@qq.com/SRCalendar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SRCalendar/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*"
+}
