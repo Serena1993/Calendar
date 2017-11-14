@@ -24,10 +24,9 @@ class CalendarDayDefualtCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         //日期
-        dateLabel = UILabel(frame: CGRect(x: 0, y: 0, width: bounds.size.width, height: 20))
+        dateLabel = UILabel(frame: CGRect(x: 0, y: 5, width: bounds.size.width, height: 20))
         dateLabel.textAlignment = .center
-        dateLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        dateLabel.center = self.center
+        dateLabel.font = UIFont.systemFont(ofSize: 14)
         addSubview(dateLabel)
         
     }
@@ -86,6 +85,8 @@ class CalendarDayDefualtCell: UICollectionViewCell {
             dateLabel.text = "\(model.day)"
             dateLabel.textColor = UIColor.white
             self.backgroundColor = ColorConst.tintColor
+            self.layer.cornerRadius = 5
+            self.layer.masksToBounds = true
         }
     }
     
