@@ -21,7 +21,7 @@ class BuyDateViewController: CalendarViewController {
     
     
     //设置日历选中今天
-    func setTrainToDay(_ day: NSInteger, ToDateForString todate:String , _ tags:[(String,String)]?){
+    func setMarkToDay(_ day: NSInteger, ToDateForString todate:String , _ tags:[(String,String)]?){
         
         daynumber = day
         optiondaynumber = 1

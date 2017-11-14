@@ -11,7 +11,7 @@ import Foundation
 enum CalendarDayStyle:String{
     case CellDayTypeEmpty = "CellDayTypeEmpty"
     case CellDayTypeClick = "CellDayTypeClick"
-    case Invalid = "invalid"
+    case CellDayTypeInvalid = "invalid"
     case CellDayTypePast = "CellDayTypePast"
     case CellDayTypeWeek = "CellDayTypeWeek"
     case CellDayTypeFuture = "CellDayTypeFuture"

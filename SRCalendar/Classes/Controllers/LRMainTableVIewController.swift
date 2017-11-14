@@ -52,11 +52,11 @@ public class MainTableViewController: UITableViewController {
         
         switch indexPath.row {
         case 0:
-            cell.textLabel?.text = "Default Style"
+            cell.textLabel?.text = "Season Style"
         case 1:
-            cell.textLabel?.text = "Holiday Style"
+            cell.textLabel?.text = "Month Style"
         case 2:
-            cell.textLabel?.text = "Tag Style"
+            cell.textLabel?.text = "Week Style"
         default:
             break
         }
@@ -73,7 +73,7 @@ public class MainTableViewController: UITableViewController {
             let chvc = BuyDateViewController()
             chvc.navigationItem.title = "Default Style"
             chvc.calendarblock = calendarblock
-            chvc.setTrainToDay(canSelectLimit, ToDateForString:Date.stringFromDate(Date()),[("","")])
+            chvc.setMarkToDay(canSelectLimit, ToDateForString:Date.stringFromDate(Date()),[("","")])
             self.navigationController?.pushViewController(chvc, animated: true)
         case 1:
             let chvc = CalendarViewController()
@@ -85,7 +85,7 @@ public class MainTableViewController: UITableViewController {
             let chvc = BuyDateViewController()
             chvc.navigationItem.title = "Tag Style"
             chvc.calendarblock = calendarblock
-            chvc.setTrainToDay(canSelectLimit, ToDateForString:Date.stringFromDate(Date()) , nil)
+            chvc.setMarkToDay(canSelectLimit, ToDateForString:Date.stringFromDate(Date()) , nil)
             self.navigationController?.pushViewController(chvc, animated: true)
 
         default:

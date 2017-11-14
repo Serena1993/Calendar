@@ -42,10 +42,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		90535AAF43612D2F2A9F8544 /* Pods-SRCalendar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRCalendar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRCalendar_Tests/Pods-SRCalendar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D7ACE7E5515FFB77160D7930 /* Pods_SRCalendar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SRCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6F21285C668017BF3CA9516 /* SRCalendar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SRCalendar.podspec; path = ../SRCalendar.podspec; sourceTree = "<group>"; };
+		E6F21285C668017BF3CA9516 /* SRCalendar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SRCalendar.podspec; path = ../SRCalendar.podspec; sourceTree = "<group>"; };
 		EC30C62503B7089E646ADDC9 /* Pods-SRCalendar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRCalendar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRCalendar_Example/Pods-SRCalendar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F8B9A6F845BA5829DB20E001 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FD0356624EF2FB60DF0EC08B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F8B9A6F845BA5829DB20E001 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FD0356624EF2FB60DF0EC08B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FE68664B2A60C705A079AFC9 /* Pods-SRCalendar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRCalendar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRCalendar_Example/Pods-SRCalendar_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,9 +209,10 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SR;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = SRCalendar;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
