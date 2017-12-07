@@ -24,7 +24,7 @@ class CalendarDayDefualtCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         //日期
-        dateLabel = UILabel(frame: CGRect(x: 0, y: 5, width: bounds.size.width, height: 20))
+        dateLabel = UILabel(frame: CGRect(x: 0, y: 10, width: bounds.size.width, height: 20))
         dateLabel.textAlignment = .center
         dateLabel.font = UIFont.systemFont(ofSize: 14)
         addSubview(dateLabel)

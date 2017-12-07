@@ -14,6 +14,7 @@ class CalendarMonthCollectionViewLayout: UICollectionViewFlowLayout {
         
             headerReferenceSize = CGSize(width: CalendarConst.ScreenW, height: CalendarConst.headHeight)//头部视图的框架大小
             footerReferenceSize = CGSize(width: CalendarConst.ScreenW, height: CalendarConst.headMargin)
+        
             sectionInset = UIEdgeInsets(top: 0, left: CalendarConst.TrainMargin, bottom: 0, right: CalendarConst.TrainMargin)
     
             itemSize = CGSize(width: (CalendarConst.ScreenW - CalendarConst.TrainMargin * 2) / 7 - 2, height: 40)////每个cell的大小
