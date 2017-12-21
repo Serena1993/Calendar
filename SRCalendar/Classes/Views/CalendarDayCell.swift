@@ -97,6 +97,11 @@ class CalendarDayDefualtCell: UICollectionViewCell {
     func hidden_false(){
         dateLabel.isHidden = false
     }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+    }
 }
 
 

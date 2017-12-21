@@ -12,17 +12,12 @@ class CalendarMonthCollectionViewLayout: UICollectionViewFlowLayout {
     override init() {
         super.init()
         
-            headerReferenceSize = CGSize(width: CalendarConst.ScreenW, height: CalendarConst.headHeight)//头部视图的框架大小
+            headerReferenceSize = CGSize(width: CalendarConst.ScreenW, height: CalendarConst.headHeight)
             footerReferenceSize = CGSize(width: CalendarConst.ScreenW, height: CalendarConst.headMargin)
-        
             sectionInset = UIEdgeInsets(top: 0, left: CalendarConst.TrainMargin, bottom: 0, right: CalendarConst.TrainMargin)
-    
-            itemSize = CGSize(width: (CalendarConst.ScreenW - CalendarConst.TrainMargin * 2) / 7 - 2, height: 40)////每个cell的大小
-            
-            minimumLineSpacing = 0  //每行的最小间距
-            
-            minimumInteritemSpacing = 0 //每列的最小间距
-        
+            itemSize = CGSize(width: (CalendarConst.ScreenW - CalendarConst.TrainMargin * 2) / 7 - 2, height: 40)
+            minimumLineSpacing = 0
+            minimumInteritemSpacing = 0
         
     }
     
