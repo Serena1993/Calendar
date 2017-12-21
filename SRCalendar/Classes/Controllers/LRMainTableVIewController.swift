@@ -31,9 +31,12 @@ public class MainTableViewController: UITableViewController {
     
  
     func calendarblock(_ model: CalendarDayModel){
-
+        
+        let _ = self.navigationController?.popViewController(animated: true)
         timeView.text = "\(model.toString("MM月dd日")) \(model.getWeek())"
-       let _ = self.navigationController?.popViewController(animated: true)
+        let eventService = LREventService.sharedInstance
+        eventService.addRiminderNotify(title: "Test", date: model.date())
+        eventService.addEventNotify(title: "Test", start: Date(), end: model.date())
     }
     
     override public func numberOfSections(in tableView: UITableView) -> Int {
