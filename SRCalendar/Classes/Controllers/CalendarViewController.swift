@@ -29,7 +29,6 @@ public class CalendarViewController: UIViewController, UICollectionViewDataSourc
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-//        initData()
         self.automaticallyAdjustsScrollViewInsets = false
         initView()
     }
@@ -47,8 +46,7 @@ public class CalendarViewController: UIViewController, UICollectionViewDataSourc
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
-        view.addSubview(CalendarHeaderView(headerType: .SRCalendarHeaderViewTypeEn))
-        
+        view.addSubview(CalendarHeaderView(headerType: .SRCalendarHeaderViewTypeWeek))
         
         indicator.frame.size = CGSize(width: 50, height: 50)
         indicator.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2)
@@ -99,6 +97,7 @@ public class CalendarViewController: UIViewController, UICollectionViewDataSourc
     @objc func pop(){
         let _ = self.navigationController?.popViewController(animated: true)
     }
+
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
