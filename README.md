@@ -22,7 +22,7 @@ pod 'SRCalendar'
 
 ## Author
 
-305369570@qq.com, rui.li07@ele.me
+Serena_R, lirui050716@163.com
 
 ## License
 
