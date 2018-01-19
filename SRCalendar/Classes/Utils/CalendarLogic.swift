@@ -8,17 +8,15 @@
 
 import Foundation
 
-
-
 class CalendarLogic: NSObject {
+    
     var today = Date() //今天的日期
     var before = Date() //之后的日期
     var select = Date() //选择的日期
     var startDate = Date() //最早的可选日期
     var selectcalendarDay = CalendarDayModel()
     var datesAndTags:[(String,String)]?
-    //    - (NSMutableArray *)reloadCalendarView:(Date *)date  selectDate:(Date *)date1 needDays:(int)days_number;
-    //    - (void)selectLogic:(CalendarDayModel *)day;
+
     func reloadCalendarView(_ date: Date,startDate:Date, selectDate: Date, days_number: NSInteger) -> [AnyObject]{
 
         today = date //起始日期
